@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+ 
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200vh;
+      padding: 0;
+      margin: 0;
+    }
+
+    .container {
+      display: grid;
+      /* border: 1px solid black; */
+      height: 1496px;
+      width: 748px;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 22px;
+      background-color: black;
+      gap: 9px;
+    }
+
+    .item {
+      background-color: #F0F1EC;
+    }
+
+    .one {
+      background-color: #E72F24;
+    }
+
+    .two {
+      grid-column: span 3;
+    }
+
+    .three {
+      grid-area: 2 / 1 / 4 / -4;
+    }
+
+    .four {
+      grid-area: 2 / 2 / 4 / -2;
+    }
+
+    .five {
+      grid-area: 3 / -1 / 5 / -2;
+    }
+
+    .six {
+      grid-area: 2 / -2 / 3 / -1;
+      background-color: #004592;
+      border-bottom: 10px solid black;
+    }
+
+    .seven {
+      grid-area: 4 / -4 / 5 / -5;
+    }
+
+    .eight {
+      grid-area: 4 / -3 / 5 / -4;
+      background-color: #F9D01E;
+    }
+
+    .nine {
+      grid-area: 4 / -2 / 5 / -3;
+      background-color: #232629;
+    }
+     
+    
+    
+
+  </style>
+</head>
+
+<body>
+  
+  <div class="container">
+    <div class="item one"></div>
+    <div class="item two"></div>
+    <div class="item three"></div>
+    <div class="item four"></div>
+    <div class="item five"></div>
+    <div class="item six"></div>
+    <div class="item seven"></div>
+    <div class="item eight"></div>
+    <div class="item nine"></div>
+  </div>
+</body>
+
+</html>
